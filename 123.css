@@ -1,0 +1,85 @@
+body{
+	background-color:#519DFF;
+}
+
+span{
+	color: white;
+	font-size: 100px;
+	cursor: pointer;
+}
+
+h1{
+	color: white;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	text-align: center;
+}
+
+.center{
+	margin: 0;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	-ms-transform: translateY(-40%);
+	transform: translateY(-40%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.button1{
+	background-color: #85096C;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	padding: 20px 45px;
+	text-align: center;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.button2{
+	background-color: #B83A2E;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	padding: 20px 45px;
+	text-align: center;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.button3{
+	background-color: #1763E8;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	padding: 20px 45px;
+	text-align: center;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.button1:hover{
+	background-color: #4F0640;
+}
+
+.button2:hover{
+	background-color: #7A261F;
+}
+
+.button3:hover{
+	background-color: #0B3070;
+}
+
+#randomNumbers{
+	color: white;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 80px;
+	margin: 0;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	-ms-transform: translateY(-60%);
+	transform: translateY(-60%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}

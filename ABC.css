@@ -1,0 +1,87 @@
+body{
+	background-color:#519DFF;
+}
+
+span{
+	color: white;
+	font-size: 100px;
+	cursor: pointer;
+}
+
+h1{
+	color: white;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	text-align: center;
+}
+
+.center{
+	margin: 0;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	-ms-transform: translateY(-40%);
+	transform: translateY(-40%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+
+
+.buttonA{
+	background-color: #057D06;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	padding: 20px 45px;
+	text-align: center;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.buttonB{
+	background-color: #677973;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	padding: 20px 45px;
+	text-align: center;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.buttonC{
+	background-color: #C37973;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	padding: 20px 45px;
+	text-align: center;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.buttonA:hover{
+	background-color: #034704;
+}
+
+.buttonB:hover{
+	background-color: #434F4B;
+}
+
+.buttonC:hover{
+	background-color: #875450;
+}
+
+#randomLetter{
+	color: white;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 80px;
+	margin: 0;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	-ms-transform: translateY(-60%);
+	transform: translateY(-60%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
