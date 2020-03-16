@@ -10,7 +10,7 @@
 
 	var str = "abcdefghijklmnopqrstuvwxyzæøå";
 	var abc="ABC"
-	var res = abc.charAt(Math.floor((Math.random() * 3) + 1));
+	var res = abc.charAt(Math.floor((Math.random() * 3)));
 	document.getElementById('randomLetter').innerHTML = res;
 	
 	
