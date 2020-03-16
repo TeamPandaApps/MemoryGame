@@ -3,7 +3,7 @@
  * 123 Game
  *
  * get a random number and show the player
- * When the player clicks a button check if the value corresponds to the correct
+ * When the player clicks a button check if the value corresponds to the correct button and tel them if they are wrong ornot
  * 
 */
 
@@ -15,17 +15,14 @@
 		location.href = "index.html";
 	}
 
-	function answerFunction() {
-		var button1 = document.getElementsByClassName("button1").value;
-		var button2 = document.getElementsByClassName("button2").value;
-		var button3 = document.getElementsByClassName("button3").value;
-		var number = document.getElementById("randomNumbers").value;
+	function answerFunction(nr) {
+		var number = parseInt(document.getElementById("randomNumbers").textContent, 10);
 		var text;
 
-		if (number === button1 || number === button2 || number === button3){
-			text = "OK its";
+		if (number === nr){
+			text = "Riktig!"+nr;
 		}else{
-			text = "Nope!";
+			text = "Feil :(";
 		}
 
 		document.getElementById("rightWrong").innerHTML = text;
