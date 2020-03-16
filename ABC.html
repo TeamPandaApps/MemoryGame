@@ -14,24 +14,15 @@
 	<h1>ABC 123 Lærespill</h1>
 
 	<div class="center">
-		<button class="buttonA">A</button>
-		<button class="buttonB">B</button>
-		<button class="buttonC">C</button>	
-	</div>
+	<button id="button1" onclick= "answerFunction('A')">A</button>
+	<button id="button2" onclick= "answerFunction('B')">B</button>
+	<button id="button3" onclick= "answerFunction('C')">C</button>
+</div>
 
 	<p id="randomLetter"></p>
 
-<script>
-	var str = "abcdefghijklmnopqrstuvwxyzæøå";
-	var res = str.charAt(Math.floor((Math.random() * 28) + 1);
-	document.getElementById('randomLetter').innerHTML = res;
-	
-	
-	function backFunction() {
-		location.href = "index.html";
-	}
-
-</script>
+<script src="js/game2.js"></script>
+<p id= "rightWrong"></p>
 
 </body>
 </html>

@@ -20,7 +20,7 @@
 		var text;
 
 		if (number === nr){
-			text = "Riktig!"+nr;
+			text = "Riktig!";
 		}else{
 			text = "Feil :(";
 		}
