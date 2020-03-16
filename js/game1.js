@@ -23,7 +23,7 @@
 		var text;
 
 		if (number === button1 || number === button2 || number === button3){
-			text = "OK its".number;
+			text = "OK its";
 		}else{
 			text = "Nope!";
 		}
