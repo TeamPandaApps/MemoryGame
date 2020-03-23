@@ -7,26 +7,29 @@
  * 
 */
 
-
-	var rNr= Math.floor(Math.random() * 3) + 1;
+function instantiate(){
+	var rNr= Math.floor(Math.random() * 9) + 1;
 	document.getElementById('randomNumbers').innerHTML = rNr;
+	document.getElementById("rightWrong").innerHTML=" ";
+}
 
-	function backFunction() {
-		location.href = "index.html";
+instantiate();
+
+
+function answerFunction(nr) {
+	var number = parseInt(document.getElementById("randomNumbers").textContent, 10);
+	var text;
+
+	if (number === nr){
+		text = "Riktig!";
+		document.getElementById("rightWrong").style.color = "#3CAD28";
+	}else{
+		text = "Feil :(";
+		document.getElementById("rightWrong").style.color = "red";
 	}
 
-	function answerFunction(nr) {
-		var number = parseInt(document.getElementById("randomNumbers").textContent, 10);
-		var text;
-
-		if (number === nr){
-			text = "Riktig!";
-		}else{
-			text = "Feil :(";
-		}
-
-		document.getElementById("rightWrong").innerHTML = text;
-	}
+	document.getElementById("rightWrong").innerHTML = text;
+}
 
 /**
  *

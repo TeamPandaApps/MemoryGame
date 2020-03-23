@@ -4,25 +4,34 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/css.css"/>
-
+	<script type="text/javascript" src="js/Util.js"></script>
+	<script type="text/javascript" src="js/Game2.js"></script>
 <title>Lærespill1</title>
 </head>
 <body>
-
-	<span onclick="backFunction()">&#8629;</span>
+	
+	<span onclick="ToMain()">&#8629;</span>
 
 	<h1>ABC 123 Lærespill</h1>
 
 	<div class="center">
-	<button class="button1" onclick= "answerFunction('A')">A</button>
-	<button class="button2" onclick= "answerFunction('B')">B</button>
-	<button class="button3" onclick= "answerFunction('C')">C</button>
-</div>
+		<button id="buttonA" onclick="answerFunction('A')">A</button>
+		<button id="buttonB" onclick="answerFunction('B')">B</button>
+		<button id="buttonC" onclick="answerFunction('C')">C</button>	
+		<button id="buttonD" onclick="answerFunction('D')">D</button>
+		<button id="buttonE" onclick="answerFunction('E')">E</button>
+		<button id="buttonF" onclick="answerFunction('F')">F</button>
+		<button id="buttonG" onclick="answerFunction('G')">G</button>				
+	</div>
 
 	<p id="randomLetter"></p>
 
-<script src="js/game2.js"></script>
-<p id= "rightWrong"></p>
-
+	<p id= "rightWrong"></p>
+	<div class="btnLoop">
+		<button id="btnLoop" onclick="retry()">Prøv igjen!</button>
+	</div>
+	<script type="text/javascript">
+		instantiate();
+	</script>
 </body>
 </html>
